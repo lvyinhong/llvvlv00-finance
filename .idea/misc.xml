@@ -5,6 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/llvvlv00-common/pom.xml" />
+        <option value="$PROJECT_DIR$/llvvlv00-finance-admin-api/pom.xml" />
+        <option value="$PROJECT_DIR$/llvvlv00-finance-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/llvvlv00-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/llvvlv00-wx/pom.xml" />
       </list>
     </option>
   </component>

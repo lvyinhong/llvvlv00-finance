@@ -7,6 +7,8 @@
     <groupId>com.llvvlv00</groupId>
     <artifactId>llvvlv00-finance</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>llvvlv00-common</module>
         <module>llvvlv00-mybatis</module>
@@ -14,8 +16,6 @@
         <module>llvvlv00-finance-biz</module>
         <module>llvvlv00-finance-admin-api</module>
     </modules>
-    <packaging>pom</packaging>
-    <name>finance-parent</name>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
