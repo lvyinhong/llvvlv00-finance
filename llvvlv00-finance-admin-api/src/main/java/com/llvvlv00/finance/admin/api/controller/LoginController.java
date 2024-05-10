@@ -2,6 +2,7 @@ package com.llvvlv00.finance.admin.api.controller;
 
 import com.llvvlv00.common.dto.ApiResponse;
 import com.llvvlv00.finance.biz.dto.form.GetBase64CodeForm;
+import com.llvvlv00.finance.biz.dto.form.GetSmsCodeForm;
 import com.llvvlv00.finance.biz.service.MemberLoginService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -32,5 +33,12 @@ public class LoginController {
     public ApiResponse<String> getBase64Code(@Validated @ModelAttribute GetBase64CodeForm form) {
         String baseCode64 = memberLoginService.getBase64Code(form);
         return ApiResponse.success(baseCode64);
+    }
+
+    @ApiOperation("获取短信验证码")
+    @GetMapping("/sendSmsCode")
+    public ApiResponse<Void> sendSmsCode(@Validated @ModelAttribute GetSmsCodeForm form) {
+        memberLoginService.sendSmsCode(form);
+        return ApiResponse.success();
     }
 }

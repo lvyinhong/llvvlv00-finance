@@ -50,7 +50,7 @@ spring:
 # Mybatis
 mybatis:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
-  type-aliases-package: com.bage
+  type-aliases-package: com.llvvlv00
   configuration:
     map-underscore-to-camel-case: true
     default-statement-timeout: 15
